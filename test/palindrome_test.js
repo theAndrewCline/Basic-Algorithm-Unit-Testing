@@ -1,5 +1,7 @@
 const expect = require('chai').expect;
 
+const palindrome = require('../algorithms/palindrome.js').palindrome;
+
 describe('palindrome()' , function () {
   it('Should return a boolean' , function () {
     expect(palindrome('eye')).to.be.a('boolean');
@@ -50,10 +52,6 @@ describe('palindrome()' , function () {
   });
 
   it('Should return false when "five|\_/|four" is passed' , function () {
-    expect(palindrome('0_0 (: /-\ :) 0-0')).to.be.false;
+    expect(palindrome('five|\_/|four')).to.be.false;
   });
-
-
-
-
 });
