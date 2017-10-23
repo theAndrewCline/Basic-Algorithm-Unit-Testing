@@ -3,7 +3,7 @@ function repeatStringNumTimes(str , num) {
   for(var i = 0; i < num; i ++) {
     newStr += str;
   }
-  return newStr
+  return newStr; 
 }
 
 module.exports.repeatStringNumTimes = repeatStringNumTimes;
