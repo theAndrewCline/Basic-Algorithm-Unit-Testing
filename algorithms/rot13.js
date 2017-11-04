@@ -15,11 +15,7 @@ function rot13(str) {
             arr.push(String.fromCharCode(num)); 
         }
     }
-
     var newStr = arr.join('');
     return newStr; 
 }
-
-rot13("GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.");
-
 module.exports.rot13 = rot13; 
